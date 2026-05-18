@@ -4,15 +4,15 @@ export const products = [
     name: "Hamburguesa",
     price: 80,
     category: "Comida",
-    image: "..",
-    description: "Hamburguesa doble"
+    image: "/images/hamburguesa.jpg",
+    description: "Hamburguesa "
   },
   {
     id: 2,
     name: "Pizza",
     price: 100,
     category: "Comida",
-    image: "..",
+    image: "/images/pizza.jpg",
     description: "Pizza grande"
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     name: "Coca Cola",
     price: 35,
     category: "Bebidas",
-    image: "..",
+    image: "/images/cocaLata.jpg",
     description: "Refresco"
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     name: "Jugo de naranja",
     price: 25,
     category: "Bebidas",
-    image: "..",
+    image: "/images/jugoNaranja.jpg",
     description: "Jugo sabor a naranja"
   }
 ]
