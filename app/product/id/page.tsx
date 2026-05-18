@@ -1,5 +1,5 @@
-import ProductCard from "@/components/ProductCart"
 import { products } from "@/data/products"
+import Link from "next/link"
 
 export default function Home() {
   return (
