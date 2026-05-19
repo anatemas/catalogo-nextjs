@@ -1,23 +1,26 @@
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
 import "./globals.css"
 import { CarritoProvider } from "@/context/CarritoCotext"
 import Navbar from "@/components/Navbar"
 
-
-const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Mueblería El Roble",
-  description: "Punto de venta de muebles",
+  description: "Muebles de calidad para tu hogar",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={geist.variable}>
-      <body className="min-h-full flex flex-col bg-gray-50">
+    <html lang="es">
+      <body style={{
+        backgroundColor: "#F5F0E8",
+        minHeight: "100vh",
+        margin: 0,
+        padding: 0,
+        fontFamily: "Georgia, serif",
+        color: "#2C1A0E"
+      }}>
         <CarritoProvider>
-              <Navbar />
+          <Navbar />
           {children}
         </CarritoProvider>
       </body>
